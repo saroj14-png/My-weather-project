@@ -1,0 +1,147 @@
+.container {
+  margin-top: 20px;
+  width: 900px;
+  height: 700px;
+  border: 2px solid #5dacbd;
+  border-radius: 10px;
+  background-image: url("../images/alex.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+}
+.row .navbar {
+  height: 60px;
+  padding-top: 50px;
+}
+
+#city-input {
+  height: 30px;
+  margin-top: 5px;
+  font-size: 15px;
+  width: 300px;
+  border: 1px solid #000000;
+  border-top-left-radius: 0;
+}
+
+.cityEnter {
+  padding-bottom: 5px;
+  width: 80px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.cityEnter:hover {
+  background-color: #5dacbd;
+}
+#current-location-button {
+  width: 35px;
+  height: 35px;
+  margin-left: 45px;
+}
+#current-location-button:hover {
+  cursor: pointer;
+  border: 2px solid #000000;
+  padding-bottom: 8px;
+}
+
+#rowCity {
+  height: 310px;
+}
+.city {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 500px;
+}
+#city {
+  padding-top: 15px;
+  font-size: 35px;
+}
+#location {
+  margin: 0;
+  font-size: 16px;
+}
+#time {
+  padding-top: 10px;
+  font-size: 35px;
+}
+#timeZone {
+  font-size: 20px;
+}
+#date {
+  font-size: 16px;
+}
+#details {
+  font-size: 16 px;
+  padding-bottom: 30px;
+}
+.localtemperture {
+  font-size: 70px;
+  text-decoration: bold;
+}
+.cel,
+.fahrenheit {
+  border: none;
+  background-color: #ffffff;
+}
+
+.fahrenheit:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.cel:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.realfeel .fw-bold {
+  padding-top: 10px;
+  font-size: 16px;
+}
+.col-5 {
+  text-align: center;
+}
+.city,
+.col-7,
+.col-5 {
+  height: 300px;
+}
+ul,
+.extra_details {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+li {
+  text-align: center;
+  flex: 0 1 auto;
+  height: 30px;
+  width: 215px;
+  display: inline;
+  text-decoration: none;
+  margin: 0 auto;
+}
+.row .summery {
+  margin-left: 10px;
+}
+#day {
+  font-weight: bold;
+}
+.week {
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 150px;
+  font-size: 16px;
+  padding-top: 10px;
+}
+.weather-icons {
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+}
