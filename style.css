@@ -4,7 +4,7 @@
   height: 700px;
   border: 2px solid #5dacbd;
   border-radius: 10px;
-  background-image: url("../images/alex.jpg");
+  background-image: url("./images/alex.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #000000;
