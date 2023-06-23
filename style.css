@@ -145,3 +145,11 @@ li {
   margin: 10px auto;
   width: 40px;
 }
+a,
+.endpage {
+  text-align: center;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
