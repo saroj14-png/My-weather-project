@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   color: #000000;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
 }
 .row .navbar {
   height: 60px;
@@ -115,6 +114,10 @@ ul,
   margin-bottom: 0px;
   padding-left: 0px;
 }
+#extra {
+  font-size: 30px;
+  font-weight: 700;
+}
 li {
   text-align: center;
   flex: 0 1 auto;
@@ -128,6 +131,7 @@ li {
   margin-left: 10px;
 }
 #day {
+  font-size: 30px;
   font-weight: 700;
 }
 .week {
