@@ -108,16 +108,23 @@
 }
 ul,
 .extra_details {
+  padding-top: 10px;
   list-style-type: none;
   display: flex;
   text-decoration: none;
   margin-bottom: 0px;
   padding-left: 0px;
 }
-#extra {
-  font-size: 30px;
-  font-weight: 700;
+ul,
+.details_title {
+  padding-top: 10px;
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
+
 li {
   text-align: center;
   flex: 0 1 auto;
@@ -131,7 +138,7 @@ li {
   margin-left: 10px;
 }
 #day {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
 }
 .week {
