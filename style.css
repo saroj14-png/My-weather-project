@@ -116,13 +116,15 @@ ul,
   padding-left: 0px;
 }
 ul,
-.details_title {
+.details_title,
+.extra {
   padding-top: 10px;
   list-style-type: none;
   display: flex;
   text-decoration: none;
   margin-bottom: 0px;
   padding-left: 0px;
+  font-weight: 700px;
 }
 
 li {
