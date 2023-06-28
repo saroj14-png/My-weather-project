@@ -1,7 +1,7 @@
 .container {
   margin-top: 20px;
   width: 900px;
-  height: 680px;
+  height: 620px;
   border: 2px solid #5dacbd;
   border-radius: 10px;
   background-image: url("./images/alex.jpg");
@@ -10,17 +10,19 @@
   color: #000000;
   font-family: "Lato", sans-serif;
 }
+
 .row .navbar {
   height: 60px;
   padding-top: 45px;
 }
 
 #city-input {
+  margin-left: 36px;
   height: 35px;
   font-size: 15px;
   width: 400px;
   border: 1px solid #000000;
-  border-top-left-radius: 0;
+  border-radius: 4px;
 }
 .cityEnter {
   width: 80px;
@@ -35,6 +37,7 @@
 }
 
 #currentLocButton {
+  margin-left: 50px;
   padding: 10px 5px;
   background-color: #ffffff;
   border: 1px solid #000000;
@@ -46,9 +49,14 @@
   cursor: pointer;
   border: 2px solid #000000;
 }
-
+hr.divider {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border-width: 2px;
+}
 #rowCity {
-  height: 330px;
+  margin-top: 30px;
+  height: 280px;
   margin-left: 18px;
 }
 .city {
@@ -102,11 +110,12 @@
 
 .col-7,
 .col-5 {
-  height: 300px;
+  height: 250px;
 }
 ul,
 .extra_details {
   padding-top: 10px;
+  padding-bottom: 20px;
   list-style-type: none;
   display: flex;
   text-decoration: none;
@@ -117,6 +126,7 @@ ul,
 .details_title,
 .extra {
   padding-top: 10px;
+  padding-bottom: 10px;
   list-style-type: none;
   display: flex;
   text-decoration: none;
@@ -146,7 +156,7 @@ li {
   border-radius: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  height: 150px;
+  height: 130px;
   font-size: 16px;
   padding-top: 10px;
 }
