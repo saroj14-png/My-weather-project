@@ -4,9 +4,6 @@ function formatTime(time) {
   let min = time.getMinutes();
 
   return `${hour}:${min}`;
-  /* let offset = time.getTimezoneOffset();
-  let zone = document.querySelector("#timeZone");
-  zone.innerHTML = `${offset}`;*/
 }
 //date
 function formatDate(now) {
@@ -36,7 +33,7 @@ function formatDate(now) {
 function displayWeather(response) {
   console.log(response);
 
-  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#cityName").innerHTML = response.data.name;
   document.querySelector("#localTemperture").innerHTML = Math.round(
     response.data.main.temp
   );
@@ -96,7 +93,7 @@ currentTime.innerHTML = formatTime(time);
 let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", handleForm);
 
-let currentLocationButton = document.querySelector("#current-location-button");
+let currentLocationButton = document.querySelector("#currentLocButton");
 currentLocationButton.addEventListener("click", getCurrentLoc);
 
-searchCity("Newark");
+searchCity("Sunnyvale");
