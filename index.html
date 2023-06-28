@@ -24,9 +24,6 @@
   <body>
     <div class="container">
       <div class="row navbar" id="search-form">
-        <div class="col-2">
-          <img src="images/filter.svg" width="25px" alt="filter" />
-        </div>
         <div class="col-8">
           <form id="search-city">
             <input
@@ -39,16 +36,14 @@
           </form>
         </div>
 
-        <div class="col-2">
-          <a id="current-location-button"
-            ><img src="images/place-localizer.png" width="25"
-          /></a>
+        <div class="col-4">
+          <a id="currentLocButton">Current Location
+        </a>
         </div>
-      </div>
 
       <div class="row city" id="rowCity">
         <div class="col-7">
-          <div id="city">Newark</div>
+          <div id="cityName"></div>
           <div id="location">U.S.A</div>
           <div id="time">5:45 AM</div>
           <div id="date">Mon, 18 March</div>
