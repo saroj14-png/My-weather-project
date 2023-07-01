@@ -39,11 +39,12 @@
   background-color: #5dacbd;
 }
 #currentLocButton {
-  margin-left: 50px;
-  padding: 10px 5px;
   background-color: #ffffff;
   border: 1px solid #000000;
+  height: 35px;
+  font-size: 15px;
   border-radius: 4px;
+  position: middle;
   width: 100px;
   font-size: 15px;
 }
@@ -58,43 +59,61 @@ hr.divider {
 }
 
 #rowCity {
-  margin-top: 10px;
-  height: 280px;
+  line-height: 35px;
+  padding: 0;
+  height: 230px;
+  margin: 0;
 }
 
 #cityName {
   color: rgb(26, 26, 26);
   padding-top: 15px;
   font-size: 35px;
+  font-family: Google Sans, Roboto, arial, sans-serif;
+  font-weight: 300;
+  vertical-align: middle;
+  text-decoration: normal;
+  letter-spacing: 0;
+  line-height: 60px;
 }
 #location {
   margin: 0;
   font-size: 16px;
 }
 #time {
-  padding-top: 10px;
   font-size: 35px;
 }
-
 #date {
+  color: #2b2b2b;
+  line-height: 30px;
   font-size: 16px;
 }
-#details {
-  font-size: 16 px;
+#description {
   padding-bottom: 30px;
+  color: #2b2b2b;
+  line-height: 30px;
+  font-size: 20px;
 }
 .weather-image img {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 #localTemperture {
+  font-family: Google Sans, Roboto, arial, sans-serif;
+  font-weight: 300;
   vertical-align: middle;
-  font-size: 60px;
-  text-decoration: bold;
+  text-decoration: normal;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 56px;
+  color: #202124;
 }
 .celsius,
 .fahrenheit {
+  height: 20px;
+  font-size: 16px;
   border: none;
   background-color: #ffffff;
+  line-height: 0;
 }
 
 .fahrenheit:hover {
@@ -105,6 +124,16 @@ hr.divider {
   color: blue;
   text-decoration: underline;
 }
+#min {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 15px;
+}
+#max {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 15px;
+}
 .realfeel .fw-bold {
   padding-top: 10px;
   font-size: 16px;
@@ -113,20 +142,27 @@ hr.divider {
   padding-top: 35px;
   text-align: center;
 }
-
+.col-7 {
+  line-height: 35px;
+  padding-left: 55px;
+}
 .col-7,
 .col-5 {
-  height: 250px;
+  height: 200px;
 }
-ul,
-.extra_details {
-  padding-top: 10px;
-  padding-bottom: 20px;
+.row .summery {
+  margin: 0;
+}
+.extra {
   list-style-type: none;
   display: flex;
   text-decoration: none;
   margin-bottom: 0px;
   padding-left: 0px;
+  font-size: 24px;
+  line-height: 1.58;
+  font-weight: normal;
+  color: #202124;
 }
 ul,
 .details_title,
@@ -139,6 +175,7 @@ ul,
   margin-bottom: 0px;
   padding-left: 0px;
   font-weight: 700px;
+  font-size: 24px;
 }
 
 li {
