@@ -1,6 +1,7 @@
 .container {
   margin-top: 20px;
-  width: 900px;
+  margin: 30px auto;
+  max-width: 600px;
   height: 620px;
   border: 2px solid #5dacbd;
   border-radius: 10px;
@@ -139,14 +140,12 @@ li {
   text-align: center;
   flex: 0 1 auto;
   height: 30px;
-  width: 215px;
+  width: 140px;
   display: inline;
   text-decoration: none;
   margin: 0 auto;
 }
-.row .summery {
-  margin-left: 10px;
-}
+
 #day {
   font-size: 20px;
   font-weight: 700;
