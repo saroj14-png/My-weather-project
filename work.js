@@ -9,17 +9,17 @@ function formatTime(time) {
 function formatDate(now) {
   let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
   let months = [
-    "December",
-    "January",
-    "February",
-    "March",
-    "April",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
+    "Dec",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
   ];
 
   let day = days[now.getDay()];
@@ -32,29 +32,25 @@ function formatDate(now) {
 //show current city and Temperature of it
 function displayWeather(response) {
   console.log(response);
-
   document.querySelector("#cityName").innerHTML = response.data.name;
+  document.querySelector("#location").innerHTML = response.data.sys.country;
   document.querySelector("#localTemperture").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#feellike").innerHTML = Math.round(
     response.data.main.feels_like
   );
-
   document.querySelector("#min").innerHTML = Math.round(
     response.data.main.temp_min
   );
   document.querySelector("#max").innerHTML = Math.round(
     response.data.main.temp_max
   );
-
   document.querySelector("#pressure ").innerHTML = response.data.main.pressure;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-
   document.querySelector("#visibility").innerHTML = response.data.visibility;
-
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
@@ -64,6 +60,8 @@ function searchCity(city) {
   let apiKey = "ae24bf3b7efaa11e784aefb48ae9f617";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
+  formatDate;
+  formatTime;
 }
 
 function handleForm(event) {
@@ -97,3 +95,32 @@ let currentLocationButton = document.querySelector("#currentLocButton");
 currentLocationButton.addEventListener("click", getCurrentLoc);
 
 searchCity("Sunnyvale");
+
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+
+  temperature.innerHTML = Math.round(celsiusTemperature);
+}
+
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
+
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let celsiusTemperature = null;
+
+let temperature = document.querySelector("#localTemperture");
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);

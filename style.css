@@ -2,7 +2,7 @@
   margin-top: 20px;
   margin: 30px auto;
   max-width: 900px;
-  height: 630px;
+  height: 610px;
   border: 2px solid #5dacbd;
   border-radius: 10px;
   background-image: url("./images/alex.jpg");
@@ -10,13 +10,15 @@
   background-repeat: no-repeat;
   color: #000000;
   font-family: "Lato", sans-serif;
+  line-height: 28px;
 }
-
 .row .navbar {
   height: 60px;
   padding-top: 45px;
 }
-
+.city {
+  margin-left: 20px;
+}
 #city-input {
   margin-left: 36px;
   height: 35px;
@@ -36,7 +38,6 @@
 .cityEnter:hover {
   background-color: #5dacbd;
 }
-
 #currentLocButton {
   margin-left: 50px;
   padding: 10px 5px;
@@ -55,15 +56,14 @@ hr.divider {
   margin-bottom: 0em;
   border-width: 2px;
 }
+
 #rowCity {
-  margin-top: 30px;
+  margin-top: 10px;
   height: 280px;
-  margin-left: 18px;
 }
-.city {
-  margin-left: 20px;
-}
+
 #cityName {
+  color: rgb(26, 26, 26);
   padding-top: 15px;
   font-size: 35px;
 }
@@ -83,11 +83,11 @@ hr.divider {
   font-size: 16 px;
   padding-bottom: 30px;
 }
-.localtemperture {
+#localTemperture {
   font-size: 70px;
   text-decoration: bold;
 }
-.cel,
+.celsius,
 .fahrenheit {
   border: none;
   background-color: #ffffff;
@@ -97,7 +97,7 @@ hr.divider {
   color: blue;
   text-decoration: underline;
 }
-.cel:hover {
+.celsius:hover {
   color: blue;
   text-decoration: underline;
 }
@@ -106,6 +106,7 @@ hr.divider {
   font-size: 16px;
 }
 .col-5 {
+  padding-top: 35px;
   text-align: center;
 }
 
@@ -166,7 +167,7 @@ li {
 }
 a,
 .endpage {
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
 }
 a:hover {
