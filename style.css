@@ -84,6 +84,7 @@ hr.divider {
   padding-bottom: 30px;
 }
 #localTemperture {
+  margin-top: 50px;
   font-size: 70px;
   text-decoration: bold;
 }
