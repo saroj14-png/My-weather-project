@@ -96,31 +96,21 @@ currentLocationButton.addEventListener("click", getCurrentLoc);
 
 searchCity("Sunnyvale");
 
-function displayCelsiusTemp(event) {
-  event.preventDefault();
+// ºc To ºF
 
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-
-  temperature.innerHTML = Math.round(celsiusTemperature);
+function celsiusTemperature() {
+  let newTemperature = document.querySelector("#localTemperature");
+  newTemperature.innerHTML = Math.round(response.data.main.temp);
 }
 
-function displayFahrenheitTemp(event) {
-  event.preventDefault();
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", celsiusTemperature);
 
-  fahrenheitLink.classList.add("active");
-  celsiusLink.classList.remove("active");
-
-  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
-  temperature.innerHTML = Math.round(fahrenheitTemp);
+function changeDegreeToFahrenheit() {
+  let celsiusTemp = parseFloat(newTemperature.innerHTML);
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  newTemperature.innerHTML = `${fahrenheitTemp}°F`;
 }
 
-let celsiusTemperature = null;
-
-let temperature = document.querySelector("#localTemperture");
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", displayCelsiusTemp);
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", changeDegreeToFahrenheit);

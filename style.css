@@ -83,9 +83,12 @@ hr.divider {
   font-size: 16 px;
   padding-bottom: 30px;
 }
+.weather-image img {
+  margin-right: 10px;
+}
 #localTemperture {
-  margin-top: 50px;
-  font-size: 70px;
+  vertical-align: middle;
+  font-size: 60px;
   text-decoration: bold;
 }
 .celsius,
