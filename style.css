@@ -1,8 +1,8 @@
 .container {
   margin-top: 20px;
   margin: 30px auto;
-  max-width: 600px;
-  height: 620px;
+  max-width: 900px;
+  height: 630px;
   border: 2px solid #5dacbd;
   border-radius: 10px;
   background-image: url("./images/alex.jpg");
@@ -166,6 +166,7 @@ li {
 }
 a,
 .endpage {
+  margin-top: 10px;
   text-align: center;
 }
 a:hover {
