@@ -1,5 +1,4 @@
-// Time & Date
-
+// Time
 function formatTime(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -12,7 +11,7 @@ function formatTime(timestamp) {
   }
   return `${hours}:${mins}`;
 }
-
+// Date
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
@@ -50,6 +49,7 @@ function displayWeather(response) {
     response.data.dt * 1000
   );
 
+  // icon changed
   let iconElement = document.querySelector("#demo");
   iconElement.setAttribute("alt", response.data.weather[0].description);
   iconElement.setAttribute(
@@ -58,9 +58,9 @@ function displayWeather(response) {
   );
 
   //Current Temperature
+  celsiusTemperature = response.data.main.temp;
   let temperatureElement = document.querySelector("#localTemperture");
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
-
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   document.querySelector("#feellike").innerHTML = Math.round(
     response.data.main.feels_like
   );
@@ -70,7 +70,8 @@ function displayWeather(response) {
   document.querySelector("#max").innerHTML = Math.round(
     response.data.main.temp_max
   );
-  //section
+
+  //Section
   document.querySelector("#pressure ").innerHTML = response.data.main.pressure;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
