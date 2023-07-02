@@ -84,20 +84,28 @@ hr.divider {
   margin: 0;
   vertical-align: middle;
 }
+#text {
+  color: #2b2b2b;
+  line-height: 30px;
+  font-size: 16px;
+}
 #time {
   color: rgb(53, 52, 52);
   font-size: 30px;
 }
 #date {
   color: #2b2b2b;
+  font-weight: 300;
   line-height: 30px;
   font-size: 16px;
+  font-weight: 300;
 }
 #description {
   padding-bottom: 30px;
   color: rgb(53, 52, 52);
   line-height: 30px;
   font-size: 20px;
+  text-transform: capitalize;
 }
 .weather-image img {
   margin-right: 20px;

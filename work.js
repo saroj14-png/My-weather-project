@@ -1,18 +1,22 @@
-// Time
-function formatTime(time) {
-  let hours = time.getHours();
+// Time & Date
+
+function formatTime(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let mins = date.getMinutes();
   if (hours < 10) {
     hours = "0${hours}";
   }
-  let mins = time.getMinutes();
   if (mins < 10) {
     mins = "0${mins}";
   }
   return `${hours}:${mins}`;
 }
-/*Date
-function formatDate(now) {
+
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+  let day = days[date.getDay()];
   let months = [
     "Dec",
     "Jan",
@@ -26,38 +30,32 @@ function formatDate(now) {
     "Oct",
     "Nov",
   ];
-  let day = days[now.getDay()];
-  let month = months[now.getMonth()];
-  let date = now.getDate();
-  let year = now.getFullYear();
-  return `${day}, ${month} ${date}, ${year}`;
+  let month = months[date.getMonth()];
+  let year = date.getFullYear();
+  let date1 = date.getDate();
+  return `${day},${date1} ${month} ${year} `;
 }
-*/
-//show current city and Temperature of it
-function formatDate(timestamp) {
-  let date = new Date(timestamp);
-  let hours = date.getHours();
-  let mins = date.getMinutes();
-  let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
-  let day = days[date.getDay()];
 
-  return `${day} ${hours} ${mins}`;
-}
+//show current city and Temperature of it
 function displayWeather(response) {
   console.log(response);
   document.querySelector("#cityName").innerHTML = response.data.name;
   document.querySelector("#location").innerHTML = response.data.sys.country;
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
-  document.querySelector("date").innerHTML = formatDate(
-    response.data.coords.dt * 1000
+    response.data.weather[0].description;
+  document.querySelector("#date").innerHTML = formatDate(
+    response.data.dt * 1000
   );
-  /*let iconElement = document.querySelector("#demo");
+  document.querySelector("#time").innerHTML = formatTime(
+    response.data.dt * 1000
+  );
+
+  let iconElement = document.querySelector("#demo");
   iconElement.setAttribute("alt", response.data.weather[0].description);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );*/
+  );
 
   //Current Temperature
   let temperatureElement = document.querySelector("#localTemperture");
@@ -86,7 +84,6 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
-
 function handleForm(event) {
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
@@ -97,27 +94,15 @@ function searchLoc(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
-
 function getCurrentLoc(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLoc);
 }
-
-let currentDate = document.querySelector("#date");
-let now = new Date();
-currentDate.innerHTML = formatDate(now);
-
-let currentTime = document.querySelector("#time");
-let time = new Date();
-currentTime.innerHTML = formatTime(time);
-
 let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", handleForm);
-
 let currentLocationButton = document.querySelector("#currentLocButton");
 currentLocationButton.addEventListener("click", getCurrentLoc);
-
-searchCity("Sunnyvale");
+searchCity("Paris");
 
 // ºc To ºF
 function displayFahreheitTemperature(event) {
