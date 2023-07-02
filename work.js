@@ -32,14 +32,27 @@ function formatDate(timestamp) {
   let month = months[date.getMonth()];
   let year = date.getFullYear();
   let date1 = date.getDate();
-  return `${day}${date1}, ${month} ${year} `;
+  return `${day} ${date1}, ${month} ${year} `;
 }
 
 //show current city and Temperature of it
 function displayWeather(response) {
   console.log(response);
   document.querySelector("#cityName").innerHTML = response.data.name;
-  document.querySelector("#location").innerHTML = response.data.sys.country;
+  //display full country name
+  const countryCode = response.data.sys.country;
+
+  // Make a request to the REST Countries API
+  fetch(`https://restcountries.com/v2/alpha/${countryCode}`)
+    .then((response) => response.json())
+    .then((data) => {
+      const fullName = data.name; // Retrieve the full name of the country from the API response
+      document.querySelector("#location").innerHTML = fullName; // Display the full name in the HTML element with the id "location"
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#date").innerHTML = formatDate(

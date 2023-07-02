@@ -55,7 +55,6 @@ hr.divider {
 }
 
 #rowCity {
-  line-height: 35px;
   padding: 0;
   height: 180px;
   margin: 0;
@@ -75,7 +74,7 @@ hr.divider {
 #location {
   color: rgb(53, 52, 52);
   font-family: Google Sans, Roboto, arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   margin: 0;
   vertical-align: middle;
