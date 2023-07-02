@@ -108,15 +108,13 @@ searchCity("Paris");
 function displayFahreheitTemperature(event) {
   event.preventDefault();
   let fahreheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#localTemperture");
   temperatureElement.innerHTML = Math.round(fahreheitTemperature);
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
-
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#localTemperture");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
