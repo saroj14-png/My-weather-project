@@ -19,9 +19,11 @@
   margin-left: 20px;
 }
 #city-input {
+  color: rgb(85, 85, 85);
   font-size: 15px;
 }
 #cityEnter {
+  font-weight: 400;
   font-size: 15px;
 }
 #cityEnter:hover {
@@ -68,7 +70,7 @@ hr.divider {
   vertical-align: middle;
   text-decoration: normal;
   letter-spacing: 0;
-  line-height: 20px;
+  line-height: 30px;
 }
 #location {
   color: rgb(53, 52, 52);
@@ -77,6 +79,7 @@ hr.divider {
   font-weight: 300;
   margin: 0;
   vertical-align: middle;
+  line-height: 30px;
 }
 #text {
   font-weight: 150;
@@ -87,46 +90,36 @@ hr.divider {
 #time {
   color: 424141;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 25px;
 }
 #date {
   color: 424141;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 25px;
   font-size: 16px;
   font-weight: 300;
 }
 #description {
   padding-bottom: 30px;
   color: rgb(53, 52, 52);
-  line-height: 20px;
+  line-height: 25px;
   font-size: 20px;
   text-transform: capitalize;
 }
-.weather-image img {
-  margin-right: 20px;
-}
+
 #localTemperture {
   font-family: Google Sans, Roboto, arial, sans-serif;
   font-weight: 300;
   vertical-align: middle;
   text-decoration: normal;
   font-size: 40px;
-  letter-spacing: 0;
-  line-height: 40px;
   color: #202124;
 }
-.celsius,
-.fahrenheit {
-  height: 25px;
+.celsius .fahrenheit {
   font-size: 16px;
   border: none;
-  background-color: #ffffff;
   color: #2b2b2b;
-  line-height: 30px;
-  font-size: 16px;
 }
-
 .fahrenheit:hover {
   color: blue;
   text-decoration: underline;
@@ -135,6 +128,11 @@ hr.divider {
   color: blue;
   text-decoration: underline;
 }
+.realfeel .fw-bold {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
 .fw-bold {
   margin-left: 30px;
 }
@@ -159,7 +157,7 @@ hr.divider {
   font-size: 16px;
 }
 .col-5 {
-  padding-top: 30px;
+  padding-top: 35px;
   text-align: center;
 }
 
@@ -170,9 +168,10 @@ hr.divider {
 .row .summery {
   margin: 0;
 }
-ul,
+
 .details_title {
-  padding-top: 10px;
+  color: #2b2b2b;
+  padding: 10px 0;
   padding-bottom: 10px;
   list-style-type: none;
   display: flex;
@@ -185,10 +184,10 @@ ul,
   list-style-type: none;
   display: flex;
   text-decoration: none;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   padding-left: 0px;
   line-height: 1.58;
-  color: rgb(53, 52, 52);
+  color: rgb(85, 85, 85);
   font-family: Google Sans, Roboto, arial, sans-serif;
   font-size: 20px;
 }
@@ -206,6 +205,7 @@ li {
 #day {
   font-size: 20px;
   font-weight: 700;
+  color: #2b2b2b;
 }
 .week {
   text-align: center;
@@ -221,14 +221,16 @@ li {
   margin: 5px auto;
   width: 40px;
 }
-a,
+strong {
+  color: rgb(85, 85, 85);
+}
 .endpage {
   text-align: left;
   color: rgb(53, 52, 52);
   font-family: Google Sans, Roboto, arial, sans-serif;
   font-size: 20px;
   margin-top: 10px;
-  margin-left: 130px;
+  margin-left: 260px;
 }
 a:hover {
   color: blue;
