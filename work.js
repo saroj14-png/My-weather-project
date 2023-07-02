@@ -32,7 +32,7 @@ function formatDate(timestamp) {
   let month = months[date.getMonth()];
   let year = date.getFullYear();
   let date1 = date.getDate();
-  return `${day},${date1} ${month} ${year} `;
+  return `${day}${date1}, ${month} ${year} `;
 }
 
 //show current city and Temperature of it
