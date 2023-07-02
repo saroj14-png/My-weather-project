@@ -1,8 +1,8 @@
 .container {
-  margin-top: 20px;
-  margin: 30px auto;
+  margin: 20px auto;
+  margin-bottom: 0;
   max-width: 900px;
-  height: 540px;
+  height: 520px;
   border: 2px solid #5dacbd;
   border-radius: 10px;
   background-image: url("./images/alex.jpg");
@@ -55,7 +55,7 @@ hr.divider {
 #rowCity {
   line-height: 35px;
   padding: 0;
-  height: 200px;
+  height: 180px;
   margin: 0;
 }
 
@@ -68,35 +68,38 @@ hr.divider {
   vertical-align: middle;
   text-decoration: normal;
   letter-spacing: 0;
-  line-height: 40px;
+  line-height: 20px;
 }
 #location {
   color: rgb(53, 52, 52);
   font-family: Google Sans, Roboto, arial, sans-serif;
   font-size: 20px;
+  font-weight: 300;
   margin: 0;
   vertical-align: middle;
 }
 #text {
-  color: #2b2b2b;
-  line-height: 30px;
+  font-weight: 150;
+  color: #424141;
+  line-height: 20px;
   font-size: 16px;
 }
 #time {
-  color: rgb(53, 52, 52);
-  font-size: 30px;
+  color: 424141;
+  font-size: 20px;
+  line-height: 20px;
 }
 #date {
-  color: #2b2b2b;
+  color: 424141;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 20px;
   font-size: 16px;
   font-weight: 300;
 }
 #description {
   padding-bottom: 30px;
   color: rgb(53, 52, 52);
-  line-height: 30px;
+  line-height: 20px;
   font-size: 20px;
   text-transform: capitalize;
 }
@@ -110,7 +113,7 @@ hr.divider {
   text-decoration: normal;
   font-size: 40px;
   letter-spacing: 0;
-  line-height: 50px;
+  line-height: 40px;
   color: #202124;
 }
 .celsius,
@@ -167,20 +170,8 @@ hr.divider {
 .row .summery {
   margin: 0;
 }
-.extra {
-  list-style-type: none;
-  display: flex;
-  text-decoration: none;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  font-size: 24px;
-  line-height: 1.58;
-  font-weight: normal;
-  color: #202124;
-}
 ul,
-.details_title,
-.extra {
+.details_title {
   padding-top: 10px;
   padding-bottom: 10px;
   list-style-type: none;
@@ -188,8 +179,18 @@ ul,
   text-decoration: none;
   margin-bottom: 0px;
   padding-left: 0px;
-  font-weight: 700px;
   font-size: 24px;
+}
+.extra_details {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  line-height: 1.58;
+  color: rgb(53, 52, 52);
+  font-family: Google Sans, Roboto, arial, sans-serif;
+  font-size: 20px;
 }
 
 li {
@@ -217,13 +218,17 @@ li {
 }
 .weather-icons {
   display: block;
-  margin: 10px auto;
+  margin: 5px auto;
   width: 40px;
 }
 a,
 .endpage {
-  margin-top: 15px;
-  text-align: center;
+  text-align: left;
+  color: rgb(53, 52, 52);
+  font-family: Google Sans, Roboto, arial, sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 130px;
 }
 a:hover {
   color: blue;
