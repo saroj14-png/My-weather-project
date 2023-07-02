@@ -68,21 +68,25 @@ hr.divider {
 
 #cityName {
   color: rgb(26, 26, 26);
-  padding-top: 15px;
+  padding-top: 30px;
   font-size: 35px;
   font-family: Google Sans, Roboto, arial, sans-serif;
   font-weight: 300;
   vertical-align: middle;
   text-decoration: normal;
   letter-spacing: 0;
-  line-height: 60px;
+  line-height: 40px;
 }
 #location {
+  color: rgb(53, 52, 52);
+  font-family: Google Sans, Roboto, arial, sans-serif;
+  font-size: 20px;
   margin: 0;
-  font-size: 16px;
+  vertical-align: middle;
 }
 #time {
-  font-size: 35px;
+  color: rgb(53, 52, 52);
+  font-size: 30px;
 }
 #date {
   color: #2b2b2b;
@@ -91,7 +95,7 @@ hr.divider {
 }
 #description {
   padding-bottom: 30px;
-  color: #2b2b2b;
+  color: rgb(53, 52, 52);
   line-height: 30px;
   font-size: 20px;
 }
