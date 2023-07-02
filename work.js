@@ -10,7 +10,7 @@ function formatTime(time) {
   }
   return `${hours}:${mins}`;
 }
-//Date
+/*Date
 function formatDate(now) {
   let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
   let months = [
@@ -32,13 +32,26 @@ function formatDate(now) {
   let year = now.getFullYear();
   return `${day}, ${month} ${date}, ${year}`;
 }
-
+*/
 //show current city and Temperature of it
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let mins = date.getMinutes();
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+  let day = days[date.getDay()];
+
+  return `${day} ${hours} ${mins}`;
+}
 function displayWeather(response) {
   console.log(response);
   document.querySelector("#cityName").innerHTML = response.data.name;
   document.querySelector("#location").innerHTML = response.data.sys.country;
-
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+  document.querySelector("date").innerHTML = formatDate(
+    response.data.coords.dt * 1000
+  );
   /*let iconElement = document.querySelector("#demo");
   iconElement.setAttribute("alt", response.data.weather[0].description);
   iconElement.setAttribute(
@@ -66,8 +79,6 @@ function displayWeather(response) {
   );
   document.querySelector("#visibility").innerHTML = response.data.visibility;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
 }
 
 function searchCity(city) {
