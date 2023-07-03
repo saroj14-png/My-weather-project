@@ -80,10 +80,10 @@ hr.divider {
   line-height: 30px;
 }
 #text {
-  font-weight: 150;
-  color: #424141;
+  color: rgb(53, 52, 52);
+  font-size: 18px;
+  font-weight: 300;
   line-height: 20px;
-  font-size: 16px;
 }
 #time {
   padding-top: 10px;
@@ -93,7 +93,6 @@ hr.divider {
 }
 #date {
   color: rgb(53, 52, 52);
-  font-weight: 300;
   line-height: 22px;
   font-size: 16px;
   font-weight: 300;
@@ -102,7 +101,8 @@ hr.divider {
   padding-bottom: 30px;
   color: rgb(53, 52, 52);
   line-height: 22px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 400;
   text-transform: capitalize;
 }
 #weather {
