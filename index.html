@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
+  <div class="search-bar">
       <div class="row navbar" id="search-form">
       <div class="col-6">
       <form id="search-city">
@@ -28,7 +29,9 @@
           <a id="currentLocButton">Current Location</a>
       </div>
       </div>
-    
+  </div>
+
+  <div class="weather-temperature">
     <div class="row city" id="rowCity">
     <div class="col-7">
           <div id="cityName"></div>
@@ -50,8 +53,8 @@
       <div class="fw-bold"><span id="min">30°</span>/<span id="max"> 34°</span></div>
       <div class="realfeel">ReelFeel: <span id="feellike"> 13°</span></div>
       </div>
-    </div>
-      
+    
+  </div>  
     <hr class="divider" />
   
     <section>
@@ -68,43 +71,70 @@
           <li id="humidity">50%</li>
         </ul>
   </section>
-      
+  </div>
+
   <hr class="divider"/>
-      
+  
+  <div class="weather-forecast">
   <div class="row summery">
+    
     <div class="col week">
           <div id="day">Now</div>
           <img src="images/clouds.gif" class="weather-icons" />
-          <span id="minMax"><small>30°F</small>/ 31°F</span>
+          <div class="weather-forecast-temperature">
+            <span id="weather-forecast-min"><small>30°F</small></span>/
+            <span class="weather-forecast-max"> 31°F</span>
+          </div>
     </div>
+    
     <div class="col week">
           <div id="day">Tue</div>
           <img src="images/cloudy.gif" class="weather-icons" />
-          <span id="minMax"><small>34°F</small>/ 36°F</span>
+          <div class="weather-forecast-temperature">
+            <span id="weather-forecast-min"><small>34°F</small></span>/ 
+            <span id="weather-forecast-max">33ºF</span>
+          </div>
     </div>
+    
     <div class="col week">
           <div id="day">Wed</div>
           <img src="images/foggy.gif" class="weather-icons" />
-          <span id="minMax"><small>31°F</small>/ 33°F</span>
+          <div class="weather-forecast-temperature">
+            <span id="weather-forecast-min"><small>31°F</small></span>/
+            <span id="weather-forecast-max">33°F</span>
+          </div>
     </div>
+    
     <div class="col week">
           <div id="day">Thur</div>
           <img src="images/snow.gif" class="weather-icons" />
-          <span id="minMax"><small>28°F</small>/ 30°F</span>
+          <div class="weather-forecast-temperature">
+            <span id="weather-forecast-min"><small>28°F</small></span>/ 
+            <span id="weather-forecast-max">30ºF</span>
+          </div>
     </div>
+
     <div class="col week">
           <div id="day">Fri</div>
           <img src="images/storm.gif" class="weather-icons" />
-          <span id="minMax"><small>31°F</small>/ 34°F</span>
+          <div class="weather-forecast-temperature">
+            <span id="weather-forecast-min"><small>31°F</small></span>/
+            <span id="weather-forecast-max"> 34°F</span>
+          </div>
     </div>
+
     <div class="col week">
           <div id="day">Sat</div>
           <img src="images/sun.gif" class="weather-icons" />
-          <span><small>30°F</small>/ 33°F</span>
+          <div class="weather-forecast-temperature">
+            <span id="weather-forecast-min"><small>30°F</small></span>/
+            <span class="weather-forecast-max">33°F</span>
+          </div>
     </div>
   </div>
 </div>
-    
+</div>
+   
 <div class="endpage">
       <a href="https://github.com/saroj14-png/My-weather-project"
         target="_blank">open-source code
