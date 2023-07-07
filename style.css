@@ -12,6 +12,7 @@
   font-family: "Lato", sans-serif;
   line-height: 28px;
 }
+/* navigation bar */
 .row .navbar {
   padding-top: 35px;
 }
@@ -25,6 +26,7 @@
 #cityEnter {
   font-weight: 400;
   font-size: 15px;
+  width: 150px;
 }
 #cityEnter:hover {
   background-color: #5dacbd;
@@ -52,7 +54,7 @@ hr.divider {
   margin-bottom: 0em;
   border-width: 2px;
 }
-
+/* weather-temperature */
 #rowCity {
   padding: 0;
   height: 180px;
@@ -167,10 +169,6 @@ hr.divider {
 .col-5 {
   height: 180px;
 }
-.row .summery {
-  margin: 0;
-}
-
 .details_title {
   color: rgb(26, 26, 26);
   padding: 10px 0;
@@ -204,6 +202,10 @@ li {
   margin: 0 auto;
 }
 
+/*weather-forecast */
+.row .summery {
+  margin: 0;
+}
 #day {
   font-size: 20px;
   font-weight: 500;
@@ -211,9 +213,6 @@ li {
 }
 .week {
   text-align: center;
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
   height: 130px;
   font-size: 16px;
   padding-top: 10px;
@@ -226,6 +225,8 @@ li {
 small {
   color: rgb(85, 85, 85);
 }
+
+/*footer name*/
 .endpage {
   text-align: left;
   color: rgb(53, 52, 52);

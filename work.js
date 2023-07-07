@@ -112,12 +112,13 @@ function getCurrentLoc(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLoc);
 }
+function displayForecast() {}
 let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", handleForm);
 let currentLocationButton = document.querySelector("#currentLocButton");
 currentLocationButton.addEventListener("click", getCurrentLoc);
 searchCity("Paris");
-
+displayForecast();
 // ºc To ºF
 function displayFahreheitTemperature(event) {
   event.preventDefault();
