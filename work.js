@@ -93,7 +93,6 @@ function getForecast(coordinates) {
 function displayWeather(response) {
   console.log(response);
   document.querySelector("#cityName").innerHTML = response.data.name;
-
   //display full country name
   const countryCode = response.data.sys.country;
 
@@ -116,7 +115,7 @@ function displayWeather(response) {
   document.querySelector("#time").innerHTML = formatTime(
     response.data.dt * 1000
   );
-  document.querySelector("timeZone").innerHTML = response.data.timezone;
+
   // icon changed
   let iconElement = document.querySelector("#demo");
   iconElement.setAttribute("alt", response.data.weather[0].description);
