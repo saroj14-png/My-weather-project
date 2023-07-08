@@ -116,7 +116,7 @@ function displayWeather(response) {
   document.querySelector("#time").innerHTML = formatTime(
     response.data.dt * 1000
   );
-  document.querySelector("timeZone").innerHTML = respone.data.timezone;
+  document.querySelector("timeZone").innerHTML = response.data.timezone;
   // icon changed
   let iconElement = document.querySelector("#demo");
   iconElement.setAttribute("alt", response.data.weather[0].description);
