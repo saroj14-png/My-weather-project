@@ -202,38 +202,32 @@ li {
   margin: 0 auto;
 }
 
-/*weather-forecast */
-.row .summery {
-  margin: 0;
-}
-#day {
-  font-size: 20px;
-  font-weight: 500;
+.weather-forecast {
+  margin-top: 25px;
+  text-align: center;
   color: rgb(26, 26, 26);
 }
-.week {
-  text-align: center;
-  height: 130px;
-  font-size: 16px;
-  padding-top: 10px;
-}
-.weather-icons {
-  display: block;
-  margin: 5px auto;
-  width: 40px;
-}
-small {
-  color: rgb(85, 85, 85);
+
+.weather-forecast-date {
+  font-size: 20px;
+  color: rgb(26, 26, 26);
 }
 
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 18px;
+}
 /*footer name*/
 .endpage {
   text-align: left;
   color: rgb(53, 52, 52);
   font-family: Google Sans, Roboto, arial, sans-serif;
   font-size: 20px;
-  margin-top: 10px;
-  margin-left: 260px;
+  margin-top: 15px;
+  margin-left: 280px;
 }
 a:hover {
   color: blue;
