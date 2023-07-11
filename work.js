@@ -4,13 +4,14 @@ function formatTime(timestamp) {
   let hours = date.getHours();
   let mins = date.getMinutes();
   if (hours < 10) {
-    hours = "0${hours}";
+    hours = `0${hours}`;
   }
   if (mins < 10) {
-    mins = "0${mins}";
+    mins = `0${mins}`;
   }
   return `${hours}:${mins}`;
 }
+
 // Date
 
 function formatDate(timestamp) {

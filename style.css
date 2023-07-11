@@ -143,29 +143,27 @@ hr.divider {
   color: blue;
   text-decoration: underline;
 }
-.realfeel .fw-bold {
-  font-size: 16px;
-}
 
 .fw-bold {
   display: block;
   margin: 0 auto;
+  font-size: 16px;
+  color: rgb(53, 52, 52);
 }
 #min {
-  color: #2b2b2b;
   font-size: 16px;
+  opacity: 0.5;
   font-weight: normal;
 }
 #max {
-  color: #2b2b2b;
   font-size: 16px;
   font-weight: normal;
 }
 .realfeel {
   display: block;
   margin: 0 auto;
-  color: #2b2b2b;
   font-size: 16px;
+  color: rgb(53, 52, 52);
 }
 .col-5 {
   padding-top: 20px;
@@ -220,7 +218,8 @@ li {
   color: rgb(26, 26, 26);
 }
 
-.weather-forecast-temperature-min {
+.weather-forecast-temperature-min,
+#min {
   opacity: 0.5;
 }
 
